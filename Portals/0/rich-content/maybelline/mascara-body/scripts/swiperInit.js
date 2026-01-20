@@ -2,7 +2,7 @@
   const root = document.querySelector('#es-rc #es-rc-content');
   if (!root) return;
 
-  const swiper = new Swiper(root.querySelector('#es-rc .es-swiper'), {
+  const swiper = new Swiper(root.querySelector('.es-swiper'), {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -10,18 +10,18 @@
 
     // If we need pagination
     pagination: {
-      el: root.querySelector('#es-rc .es-swiper-pagination'),
+      el: root.querySelector('.es-swiper-pagination'),
     },
 
     // Navigation arrows
     navigation: {
-      nextEl: root.querySelector('#es-rc .es-swiper-button-next'),
-      prevEl: root.querySelector('#es-rc .es-swiper-button-prev'),
+      nextEl: root.querySelector('.es-swiper-button-next'),
+      prevEl: root.querySelector('.es-swiper-button-prev'),
     },
 
     // And if we need scrollbar
     scrollbar: {
-      el: root.querySelector('#es-rc .es-swiper-scrollbar'),
+      el: root.querySelector('.es-swiper-scrollbar'),
     },
   });
 })();
